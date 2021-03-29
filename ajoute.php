@@ -1,6 +1,6 @@
 <html>
   <body bgcolor=white>
-    // bouton menu principale
+    <!--bouton menu principal-->
     <form method="POST" action="easywear.php">
     <input type="submit" value="Retour vers la page principale"/>
     </form>
@@ -18,7 +18,7 @@
     $ordre = ociparse($connection, $texte);
     ociexecute($ordre);
     ocilogoff($connection);
-    echo "merci pour l'ajout! (debug, ordre est: ".$texte;
+    echo "merci pour l'ajout! (debug, ordre est: ".$texte.")";
     ?>
   </body>
 </html>
