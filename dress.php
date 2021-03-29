@@ -13,8 +13,8 @@
 
 
 <p>Afficher d'autres suggestions:</p>
-Oui:<input type="checkbox" value="Yes" name="suggest"><br />
-Non:<input type="checkbox" value="No" name="suggest"><br />
+Oui:<input type="radio" value="Yes" name="suggest"><br />
+Non:<input type="radio" value="No" name="suggest"><br />
 
 
 <input type="submit" name="affiche_vetements" value="Send"><input type="reset" value="Clear">
