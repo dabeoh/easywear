@@ -7,7 +7,7 @@
        $ordre = ociparse($connection, $texte);
        ociexecute($ordre);
        while (ocifetchinto($ordre, $ligne)) 
-           echo $ligne[0]." ".$ligne[1]."<b> Meteo :</b>".$ligne[2]." <b>Occasion : </b>".ligne[3]."<br/>";
+           echo $ligne[0]." ".$ligne[1]."<b> Meteo :</b>".$ligne[2]." <b>Occasion : </b>".$ligne[3]."<br/>";
 
 
       /*$texte2 =
