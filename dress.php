@@ -19,5 +19,8 @@ Non:<input type="radio" value="No" name="suggest"><br />
 
 <input type="submit" name="affiche_vetements" value="Send"><input type="reset" value="Clear">
 </form>
+<form method="POST" action="easywear.php">
+    <input type="submit" value="Retour vers la page principale"/>
+    </form>
  </body>
 </html>

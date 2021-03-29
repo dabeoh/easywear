@@ -8,7 +8,41 @@
        ociexecute($ordre);
        while (ocifetchinto($ordre, $ligne)) 
            echo $ligne[0].", ".$ligne[1].", ".$ligne[2]."<br/>";
+
+
+      /*$texte2 =
+           "delete from vetements where id=".$id;
+      $ordre = ociparse($connection, $texte);
+      ociexecute($ordre);*/
+      
        ocilogoff($connection);
        ?>
+
+       <form method="GET" action="liste.php?suppr_id="$id>
+       <select name="liste_id" id="liste_id">
+    <option value="">--Choisir le vetement à supprimer : (numéro)--</option>
+    
+    <?php
+    /*
+    while (ocifetchinto($ordre2, $ligne2)) 
+           echo $ligne2[0].", ".$ligne2[1].", ".$ligne2[2]."<br/>";
+    */
+    ?>
+    
+    <option value="curr_id">$ligne[0]</option>
+
+    }
+    
+ 
+</select>
+        <input type="submit" value="suppr_vetement"/>
+
+       </form>
+
+    <form method="POST" action="easywear.php">
+      <input type="submit" value="Retour vers la page principale"/>
+      
+
+    </form>
   </body>
 </html>

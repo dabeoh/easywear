@@ -1,9 +1,5 @@
 <html>
   <body bgcolor=white>
-    <!--bouton menu principal-->
-    <form method="POST" action="easywear.php">
-    <input type="submit" value="Retour vers la page principale"/>
-    </form>
     <?php
     $type = $_POST['type'];
     $color = $_POST['color'];
@@ -20,5 +16,9 @@
     ocilogoff($connection);
     echo "merci pour l'ajout! (debug, ordre est: ".$texte.")";
     ?>
+    <!--bouton menu principal-->
+    <form method="POST" action="easywear.php">
+    <input type="submit" value="Retour vers la page principale"/>
+    </form>
   </body>
 </html>
