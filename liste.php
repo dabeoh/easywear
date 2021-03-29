@@ -2,7 +2,7 @@
   <body>
     <?php
        $texte =
-           "select * from vetements";
+           "select * from vetements where occasion="$POST["occasion_choix"].value;
        $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
        $ordre = ociparse($connection, $texte);
        ociexecute($ordre);
