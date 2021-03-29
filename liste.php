@@ -7,7 +7,7 @@
        $ordre = ociparse($connection, $texte);
        ociexecute($ordre);
        while (ocifetchinto($ordre, $ligne)) 
-           echo $ligne[0].", ".$ligne[1].", ".$ligne[2]."<br/>";
+           echo $ligne[0]." ".$ligne[1]."<b> Meteo :</b>".$ligne[2]." <b>Occasion : </b>".ligne[3]."<br/>";
 
 
       /*$texte2 =
@@ -29,7 +29,7 @@
     */
     ?>
     
-    <option value="curr_id">$ligne[0]</option>
+    <option value="curr_id">echo $ligne[0]</option>
 
     }
     
@@ -41,6 +41,12 @@
 
     <form method="POST" action="easywear.php">
       <input type="submit" value="Retour vers la page principale"/>
+      
+
+    </form>
+
+    <form method="POST" action="ajoutVetement.php">
+      <input type="submit" value="Ajouter un autre vetement"/>
       
 
     </form>
