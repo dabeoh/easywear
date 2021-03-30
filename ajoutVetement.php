@@ -11,7 +11,7 @@
         <form action="ajoute.php" method="POST">
           <h2>Rajouter un vetement:</h2>
           <p>Couleur:</p> 
-          select name="color" size="1" required>
+          <select name="color" size="1" required>
           <option value="Bleu">Bleu</option>
           <option value="Gris">Gris</option>
           <option value="Marron">Marron</option>
