@@ -17,7 +17,7 @@ body{
 }
 
 .phone {
-  background: linear-gradient(to bottom right, #1D71F2, #E3F4FE);;
+  background: linear-gradient(to bottom right, #1D71F2, #E3F4FE);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -27,7 +27,8 @@ body{
 }
 
 h1{
-  background-color: #FFFAE0;
+  border-radius:50px;
+  background: linear-gradient(to bottom right, #FFCD00, #FFFAE0) ;
   font-size: 48px;
 }
 
@@ -40,7 +41,7 @@ h1{
 }
 
 .button {
-  color: red;
+  color: black;
   background-color: #FFCD00;
   border: none;
   padding: 15px 32px;
