@@ -63,14 +63,7 @@
           <option value="travail">Travail</option>
 
           </select>
-
-
-          <p>Rajouter un autre vetement:</p>
-          Yes:<input type="radio" value="Yes" name="rajoute"><br />
-          No:<input type="radio" value="No" name="rajoute"><br />
-
           <br>
-
           <input type="submit" name="sent" value="Ajouter">
           <input type="reset" value="Clear">
         </form>

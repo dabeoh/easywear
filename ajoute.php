@@ -22,8 +22,8 @@
         $ordre = ociparse($connection, $texte);
         ociexecute($ordre);
         ocilogoff($connection);
-        echo "merci pour l'ajout! (debug, ordre est: ".$texte.")";
         ?>
+        <a href="ajoutVetement.php" class="button">Ajouter un autre</a>
         <!--bouton menu principal-->
         <a href="easywear.php" class="button">Menu Principal</a>
       </div>
