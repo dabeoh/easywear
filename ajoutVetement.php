@@ -10,7 +10,20 @@
       <div class="phone">
         <form action="ajoute.php" method="POST">
           <h2>Rajouter un vetement:</h2>
-          <p>Couleur:</p> <input type="text" name="color" required>
+          <p>Couleur:</p> 
+          select name="color" size="1" required>
+          <option value="Bleu">Bleu</option>
+          <option value="Gris">Gris</option>
+          <option value="Marron">Marron</option>
+          <option value="Orange">Orange</option>
+          <option value="Rouge">Rouge</option>
+          <option value="Violet">Violet</option>
+          <option value="Blanc">Blanc</option>
+          <option value="Jaune">Jaune</option>
+          <option value="Noir">Noir</option>
+          <option value="Rose">Rose</option>
+          <option value="Vert">Vert</option>
+          </select>
 
           <p>Type:</p>
           <select name="type" size="1" required>
