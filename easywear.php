@@ -29,18 +29,12 @@ $_SESSION['Sname'] = $Sname;
         <h1 id="logo"><span id="easy">Easy</span><span id="wear">Wear</span></h1>
         <h3> <i>Toujours plus classe, toujours plus beau ! Même quand il fait pas beau !</i></h3>
 
-        <form method="POST" action="dress.php">
-          <input type="submit" value="M'habiller"/>
-        </form>
+        <a href="dress.php" class="button">M'habiller</a>
 
-        <form method="POST" action="garderobe.php">
-          <input type="submit" value="Ma garde-robe"/>
-        </form>
+        <a href="garderobe.php" class="button">Ma Garde Robe</a>
 
-        <form method="POST" action="ajoutVetement.php">
-          <input type="submit" value="Ajouter un vetement"/>
-        </form>
-        
+        <a href="ajoutVetement.php" class="button">Ajouter un Vetement</a>
+
       </div>
     </div>
   </body>

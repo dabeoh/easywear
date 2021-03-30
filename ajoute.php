@@ -25,9 +25,7 @@
         echo "merci pour l'ajout! (debug, ordre est: ".$texte.")";
         ?>
         <!--bouton menu principal-->
-        <form method="POST" action="easywear.php">
-          <input type="submit" value="Retour vers la page principale"/>
-        </form>
+        <a href="easywear.php" class="button">Menu Principal</a>
       </div>
     </div>
   </body>
