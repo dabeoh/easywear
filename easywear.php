@@ -9,7 +9,7 @@
 
   <body>
     <div class="outer">
-      <div class="inner">
+      <div class="middle">
         <div class="phone">
           <h1 id="logo"><span id="easy">Easy</span><span id="wear">Wear</span></h1>
           <h3> <i>Toujours plus classe, toujours plus beau ! Même quand il fait pas beau !</i></h3>
