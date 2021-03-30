@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 body{
+  background-color:  #85929e;
+}
+
+.phone{
   background-color: #f8dc95;
+  margin: auto;
+  width: 50%;
 }
 
 h1{
