@@ -2,9 +2,6 @@
 
 body{
   background-color:  #85929e;
-}
-
-.outer {
   display: table;
   position: absolute;
   top: 0;
@@ -20,10 +17,12 @@ body{
 
 .phone {
   background-color: #f8dc95;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 425.4px;
   height: 861.6px;
+  border-radius:50px;
 }
 
 h1{
