@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>EasyWear</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
