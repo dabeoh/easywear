@@ -71,7 +71,7 @@
 
           <br>
 
-          <input type="submit" name="sent" value="Send">
+          <input type="submit" name="sent" value="Ajouter">
           <input type="reset" value="Clear">
         </form>
 
