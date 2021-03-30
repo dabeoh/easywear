@@ -1,4 +1,9 @@
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ajout d'un habit</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body bgcolor=white>
     <?php
     $type = $_POST['type'];

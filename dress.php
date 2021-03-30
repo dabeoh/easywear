@@ -1,4 +1,9 @@
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>S'habiller</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
 <form action="liste.php" method="POST">
 <h2>Aide-moi à choisir un vêtement!</h2>

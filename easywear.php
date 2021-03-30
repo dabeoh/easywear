@@ -1,4 +1,9 @@
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>EasyWear</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
   <h1 id="logo"><span id="easy">Easy</span><span id="wear">Wear</span></h1>
   <h3> <i>Toujours plus classe, toujours plus beau ! Même quand il fait pas beau !</i></h3>
