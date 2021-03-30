@@ -4,10 +4,24 @@ body{
   background-color:  #85929e;
 }
 
-.phone{
-  background-color: #f8dc95;
-  margin: auto;
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
   vertical-align: middle;
+}
+
+.phone {
+  background-color: #f8dc95;
+  margin-left: auto;
+  margin-right: auto;
   width: 425.4px;
   height: 861.6px;
 }
