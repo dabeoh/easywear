@@ -5,6 +5,22 @@
     <title>EasyWear</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link rel="stylesheet" href="style.css">
+
+    <?php
+
+session_start();
+
+if (empty($_SESSION['count'])) {
+   $_SESSION['count'] = 1;
+} else {
+   $_SESSION['count']++;
+}
+
+$_SESSION['SID'] =1;
+$name="Jean";
+$_SESSION['Sname'] = $Sname;
+?>
+
   </head>
 
   <body>
@@ -17,13 +33,14 @@
           <input type="submit" value="M'habiller"/>
         </form>
 
-        <form method="POST" action="liste.php">
+        <form method="POST" action="garderobe.php">
           <input type="submit" value="Ma garde-robe"/>
         </form>
 
         <form method="POST" action="ajoutVetement.php">
           <input type="submit" value="Ajouter un vetement"/>
         </form>
+        
       </div>
     </div>
   </body>

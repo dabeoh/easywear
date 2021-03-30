@@ -26,7 +26,7 @@
         ?>
         <!--bouton menu principal-->
         <form method="POST" action="easywear.php">
-        <input type="submit" value="Retour vers la page principale"/>
+          <input type="submit" value="Retour vers la page principale"/>
         </form>
       </div>
     </div>
