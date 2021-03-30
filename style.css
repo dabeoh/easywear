@@ -6,8 +6,9 @@ body{
 
 .phone{
   background-color: #f8dc95;
-  width: 9vw;
-  height: 16vh;
+  margin: auto;
+  width: 90vw;
+  height: 160vh;
 }
 
 h1{
