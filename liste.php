@@ -29,11 +29,10 @@
     
     <?php
     /*
-    while (ocifetchinto($ordre2, $ligne2)) 
+    while (ocifetchinto($ordre2, $ligne2)){
            echo $ligne2[0].", ".$ligne2[1].", ".$ligne2[2]."<br/>";
-    */
-    
     }
+    */
    echo "<option value='curr_id'>echo '$ligne[0]'</option>"
     ?>
     
