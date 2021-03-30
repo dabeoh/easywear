@@ -21,6 +21,9 @@
         $ordre = ociparse($connection, $texte);
         ociexecute($ordre);
         ocilogoff($connection);
+        echo $type." ".$color[1]
+                    ."<b> Meteo : </b>".$meteo
+                    ."<b> Occasion : </b>".$occasion." bien ajouté !<br/>";
         ?>
         <a href="ajoutVetement.php" class="button">Ajouter un autre</a>
         <!--bouton menu principal-->
