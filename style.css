@@ -6,6 +6,8 @@ body{
 
 .phone{
   background-color: #f8dc95;
+  position: absolute;
+  top: 50%;
   margin: auto;
   width: 450px;
   height: 974px;
