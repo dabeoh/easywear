@@ -13,7 +13,6 @@
         $color = $_POST['color'];
 
         $meteo = $_POST['meteo'];
-        $rajoute = $_POST['rajoute'];
         $occasion= $_POST['occasion'];
 
         $texte = "insert into vetements values
