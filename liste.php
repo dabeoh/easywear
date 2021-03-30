@@ -2,7 +2,7 @@
   <body>
     <?php
        $texte =
-           "select * from vetements where occasion=".$POST["occasion_choix"].value;
+           "select * from vetements where occasion=".$_POST['occasion_choix'].value;
        $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
        $ordre = ociparse($connection, $texte);
        ociexecute($ordre);
@@ -27,11 +27,10 @@
     while (ocifetchinto($ordre2, $ligne2)) 
            echo $ligne2[0].", ".$ligne2[1].", ".$ligne2[2]."<br/>";
     */
-    ?>
     
-    <option value="curr_id">echo $ligne[0]</option>
-
     }
+   echo "<option value='curr_id'>echo '$ligne[0]'</option>"
+    ?>
     
  
 </select>

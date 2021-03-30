@@ -1,6 +1,6 @@
 <html>
   <body>
-  <h1> EasyWear </h1>
+  <h1 id="logo"><span id="easy">Easy</span><span id="wear">Wear</span></h1>
   <h3> <i>Toujours plus classe, toujours plus beau ! Même quand il fait pas beau !</i></h3>
  <form method="POST" action="dress.php">
     <input type="submit" value="M'habiller"/>
