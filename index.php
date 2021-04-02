@@ -18,7 +18,7 @@ if (empty($_SESSION['count'])) {
 
 $_SESSION['SID'] =1;
 $name="Jean";
-$_SESSION['Sname'] = $Sname;
+
 ?>
 
   </head>

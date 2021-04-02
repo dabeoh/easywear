@@ -25,7 +25,7 @@
         </form>
 
         <!--bouton menu principal-->
-        <a href="easywear.php" class="button">Menu Principal</a>
+        <a href="index.php" class="button">Menu Principal</a>
       </div>
     </div>
   </body>
