@@ -18,11 +18,11 @@
         if (session_status() === PHP_SESSION_NONE){
           header('Location: index.php');
         } else {
-          $texte = "select * from vetements;";
+          $texte = "select * from vetements";
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
-          while (ocifetchinto($ordre, $ligne)) 
+          while (ocifetchinto($ordre, $ligne))
               echo $ligne[0]." ".$ligne[1]
                     ."<b> Meteo : </b>".$ligne[2]
                     ."<b> Occasion : </b>".$ligne[3]."<br/>";
@@ -33,13 +33,7 @@
         }
         ?>
 
-        <form method="POST" action="index.php">
-          <input type="submit" value="Retour vers la page principale"/>
-        </form>
-
-        <form method="POST" action="ajoutVetement.php">
-          <input type="submit" value="Ajouter un autre vetement"/>
-        </form>
+        <a href="ajoutVetement.php" class="button">Ajouter un autre Vêtement</a>
 
         <!--bouton menu principal-->
         <a href="index.php" class="button">Menu Principal</a>
