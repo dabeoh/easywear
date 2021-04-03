@@ -12,23 +12,14 @@
 
         $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
         $rand=rand(0,3);
-        echo '$rand';
-        switch ($rand) {
- case 0 : 
-    $meteo="ensoleille"; 
-    break;
- case 1 :
-    $meteo="orage"; 
-    break;
- case 2 : 
-    $meteo="pluie";  
-    break;
-  case 3 : 
-    $meteo="neige";  
-    break;
-}
+        //echo '$rand';
+        $liste_meteo=array("ensoleille","neige","pluie","orage","purple");
+        
+        shuffle($liste_meteo);
+        $meteo=$liste_meteo[rand(0,3)];
+      
           $texte = "select * from vetements
-                    where occasion='".$_POST['occasion_choix']."'and meteo='"$meteo"'";
+                    where occasion='".$_POST['occasion_choix']."'and meteo='".$meteo."'";
           
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
