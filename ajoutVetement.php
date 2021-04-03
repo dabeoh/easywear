@@ -71,7 +71,7 @@
                   
            <?php
 
-           if(is_empty($_POST['occasion'])||is_empty($_POST['meteo'])||is_empty($_POST['type'])||is_empty($_POST['couleur'])){
+           if(($_POST['occasion'].value=="")||($_POST['meteo'].value=="")||($_POST['type'].value=="")||($_POST['couleur'].value=="")){
 
              header('Location: ajoutVetement.php');  
 
