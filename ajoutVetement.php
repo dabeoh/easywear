@@ -12,7 +12,7 @@
           <h2>Rajouter un vetement:</h2>
           <p>Couleur:</p> 
           <select name="color" size="1" required>
-          <option value="empty">- - - - - -</option>
+          <option value="">- - - - - -</option>
           <option value="Bleu">Bleu</option>
           <option value="Gris">Gris</option>
           <option value="Marron">Marron</option>
@@ -28,7 +28,7 @@
 
           <p>Type:</p>
           <select name="type" size="1" required>
-          <option value="empty">- - - - - -</option>
+          <option value="">- - - - - -</option>
           <option value="veste">Veste</option>
           <option value="shirt">Shirt</option>
           <option value="polo">Polo</option>
@@ -51,7 +51,7 @@
 
           <p>Meteo</p>
           <select name="meteo" size="1" required>
-          <option value="empty">- - - - - -</option>
+          <option value="">- - - - - -</option>
           <option value="Pluie">Pluie</option>
           <option value="Neige">Neige</option>
           <option value="Ensoleille">Ensoleille</option>
@@ -61,7 +61,7 @@
 
           <p>Occasion:</p>
           <select name="occasion" size="1" required>
-          <option value="empty">- - - - - -</option>
+          <option value="">- - - - - -</option>
           <option value="quotidien">Quotidien</option>
           <option value="festif">Festif</option>
           <option value="travail">Travail</option>
@@ -71,7 +71,7 @@
                   
            <?php
 
-           if($_POST['occasion'].value=="empty"||$_POST['meteo'].value=="empty"||$_POST['type'].value=="empty"||$_POST['couleur'].value=="empty"){
+           if(is_empty($_POST['occasion'])||is_empty($_POST['meteo'])||is_empty($_POST['type'])||is_empty($_POST['couleur'])){
 
              header('Location: ajoutVetement.php');  
 
