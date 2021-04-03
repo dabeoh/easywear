@@ -42,6 +42,7 @@ h1{
 }
 
 .button {
+  font-family: 'Open Sans', Verdana, sans-serif;
   color: black;
   background-color: #FFCD00;
   border: none;

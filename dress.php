@@ -9,7 +9,7 @@
     <div class="middle">
       <div class="phone">
         <form action="liste.php" method="POST">
-          <h2>Aide-moi à choisir un vêtement!</h2>
+          <h2>Aide-moi à choisir un vêtement !</h2>
           <h4> Je sélectionne mon occasion : </h4>
 
           <select name="occasion_choix" size="1" required>
@@ -21,7 +21,8 @@
           <p>Afficher d'autres suggestions:</p>
           Oui:<input type="radio" value="Yes" name="suggest"><br />
           Non:<input type="radio" value="No" name="suggest"><br />
-          <input type="submit" name="affiche_vetements" value="Send"><input type="reset" value="Clear">
+          <!--Fait quelque chose ça ? ^ -->
+          <input class = "button" type="submit" name="affiche_vetements" value="M'habiller !">
         </form>
 
         <!--bouton menu principal-->
