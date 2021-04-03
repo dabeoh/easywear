@@ -15,7 +15,9 @@
     <div class="middle">
       <div class="phone">
         <?php
-        if ($_SESSION['SID']){
+        if (session_status() === PHP_SESSION_NONE){
+          header('Location: index.php');
+        } else {
           $texte = "select * from vetements
                     where id_user='".$_SESSION['SID']."'";
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
@@ -27,12 +29,12 @@
                     ."<b> Occasion : </b>".$ligne[3]."<br/>";
           
           ocilogoff($connection);
-        } else {
-          header.location("easywear.php");
+          
+          
         }
         ?>
 
-        <form method="POST" action="easywear.php">
+        <form method="POST" action="index.php">
           <input type="submit" value="Retour vers la page principale"/>
         </form>
 
@@ -41,7 +43,7 @@
         </form>
 
         <!--bouton menu principal-->
-        <a href="easywear.php" class="button">Menu Principal</a>
+        <a href="index.php" class="button">Menu Principal</a>
         
       </div>
     </div>
