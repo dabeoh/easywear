@@ -18,8 +18,7 @@
         if (session_status() === PHP_SESSION_NONE){
           header('Location: index.php');
         } else {
-          $texte = "select * from vetements
-                    where id_user='".$_SESSION['SID']."'";
+          $texte = "select * from vetements;";
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);

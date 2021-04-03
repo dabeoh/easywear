@@ -13,7 +13,7 @@
         $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
         $rand=rand(0,3);
         //echo '$rand';
-        $liste_meteo=array("ensoleille","neige","pluie","orage","purple");
+        $liste_meteo=array("ensoleille","neige","pluie","orage");
         
         shuffle($liste_meteo);
         $meteo=$liste_meteo[rand(0,3)];
