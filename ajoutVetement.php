@@ -68,7 +68,7 @@
 
           </select>
           <br>
-                    
+                  
            <?php
 
            if($_POST['occasion'].value=="empty"||$_POST['meteo'].value=="empty"||$_POST['type'].value=="empty"||$_POST['couleur'].value=="empty"){
