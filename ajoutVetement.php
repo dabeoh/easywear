@@ -68,8 +68,7 @@
 
           </select>
           <br>
-          <input type="reset" value="Clear">
-          
+                    
            <?php
 
            if($_POST['occasion'].value=="empty"||$_POST['meteo'].value=="empty"||$_POST['type'].value=="empty"||$_POST['couleur'].value=="empty"){
@@ -77,7 +76,7 @@
              header('Location: ajoutVetement.php');  
 
            } else {
-           echo  "<input type='submit' name='sent' value='Ajouter'>";
+           echo  "<input class='button' type='submit' name='sent' value='Ajouter'>";
             } ?>
    
         </form>
