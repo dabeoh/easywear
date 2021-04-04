@@ -13,7 +13,8 @@
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
           $liste_meteo=array("Ensoleille","Neige","Pluie","Orage");
           shuffle($liste_meteo);
-          $meteo=$liste_meteo[rand(0,3)];
+          //$meteo=$liste_meteo[rand(0,3)];
+          $meteo = "Ensoleille";
           $occasion=$_POST['occasion_choix'];
 
           $col_tri=array("type","couleur");
@@ -100,35 +101,12 @@
                   <td>".$vetementBas3[1]."</td>
                 </tr>
           </table>";
-
-          
-
-          /*$ordre = ociparse($connection, $texte);
-          ociexecute($ordre);
-          echo "Contexte du jour choisi :".$occasion."<br>
-                Aujourd'hui la Meteo est :".$meteo."<br>
-                Vêtements suggérés :<br>
-                <table>
-                  <tr>
-                    <th>Type</th>
-                    <th>Couleur</th>
-                </tr>";
-        
-            while (ocifetchinto($ordre, $ligne)) 
-                echo "<tr>
-                        <td>".$ligne[0]."</td>
-                        <td>".$ligne[1]."</td>
-                      </tr>";
-          echo "</table>";
-            
-          ocilogoff($connection);*/
         ?>
         </br>
         
-        <form method="POST" action="ajoutVetement.php">
-          <input class="button" type="submit" value="Ajouter un autre vetement"/>
-        </form>
-
+        <!--Boutons-->
+        <a href="liste.php" class="button">Autre Suggestion</a>
+        <a href="ajoutVetement.php" class="button">Ajouter un Nouveau Vêtement</a>
          <!--bouton menu principal-->
         <a href="index.php" class="button">Menu Principal</a>
         
