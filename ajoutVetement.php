@@ -67,9 +67,7 @@
           <select name="meteo" size="1" required>
           <option value="">- - - - - -</option>
           <option value="Pluie">Pluie</option>
-          <option value="Neige">Neige</option>
           <option value="Ensoleille">Ensoleille</option>
-          <option value="Orage">Orage</option>
           </select>
           <br />
 
