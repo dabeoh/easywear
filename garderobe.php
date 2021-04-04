@@ -17,29 +17,31 @@
         <?php
         if (session_status() === PHP_SESSION_NONE){
           header('Location: index.php');
-        } else {
-          $texte = "select * from vetements";
-          $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
-          $ordre = ociparse($connection, $texte);
-          ociexecute($ordre);
+        } else
+          {
+            $texte = "select * from vetements";
+            $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
+            $ordre = ociparse($connection, $texte);
+            ociexecute($ordre);
 
-        echo  "<table>
-                  <tr>
-                    <th>Type</th>
-                    <th>Couleur</th>
-                    <th>Meteo</th>
-                    <th>Occasion</th>
-                </tr>";
-        
-            while (ocifetchinto($ordre, $ligne))
-                echo "<tr>
-                        <td>".$ligne[0]."</td>
-                        <td>".$ligne[1]."</td>
-                        <td>".$ligne[2]."</td>
-                        <td>".$ligne[3]."</td>
-                      </tr>";
-          echo "</table>";
+            echo  "<table>
+                      <tr>
+                        <th>Type</th>
+                        <th>Couleur</th>
+                        <th>Meteo</th>
+                        <th>Occasion</th>
+                    </tr>";
             
+            while (ocifetchinto($ordre, $ligne))
+              echo "<tr>
+                      <td>".$ligne[0]."</td>
+                      <td>".$ligne[1]."</td>
+                      <td>".$ligne[2]."</td>
+                      <td>".$ligne[3]."</td>
+                    </tr>";
+            echo "</table>";
+          }
+
           ocilogoff($connection);
         ?>
 
