@@ -30,9 +30,17 @@ body{
 }
 
 .table{
-
   overflow-y: auto;
   height: 650px;
+  margin: auto;
+}
+
+table{
+  border-spacing: 20px 0;
+}
+
+td{
+  padding: 10px 0;
 }
 
 h1{
