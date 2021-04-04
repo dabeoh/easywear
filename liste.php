@@ -13,8 +13,7 @@
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
           $liste_meteo=array("Ensoleille","Neige","Pluie","Orage");
           shuffle($liste_meteo);
-          //$meteo=$liste_meteo[rand(0,3)];
-          $meteo = "Ensoleille";
+          $meteo=$liste_meteo[rand(0,3)];
           $occasion=$_POST['occasion_choix'];
 
           $col_tri=array("type","couleur");
