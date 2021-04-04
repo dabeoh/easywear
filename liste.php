@@ -13,12 +13,13 @@
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
           $liste_meteo=array("Ensoleille","Neige","Pluie","Orage");
           shuffle($liste_meteo);
-          //$meteo=$liste_meteo[rand(0,3)];
-          $meteo="Ensoleille";
+          $meteo=$liste_meteo[rand(0,3)];
           $occasion=$_POST['occasion_choix'];
-        
+
+          $liste_tri=array("ORDER BY desc","ORDER BY asc","GROUP BY type","GROUP BY couleur");
+          shuffle($liste_tri);
           $texte = "select * from vetements
-                    where occasion='".$occasion."'and meteo='".$meteo."'";
+                    where occasion='".$occasion."'and meteo='".$meteo."' ".$liste_tri;
           
           //example de if (pseudo code):
           $ordre = ociparse($connection, $texte);
@@ -94,8 +95,8 @@
                 <tr>
                   <td>".$vetementBas3[0]."</td>
                   <td>".$vetementBas3[1]."</td>
-                </tr>";
-          echo "</table>";
+                </tr>
+          </table>";
 
           
 
