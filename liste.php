@@ -16,10 +16,13 @@
           $meteo=$liste_meteo[rand(0,3)];
           $occasion=$_POST['occasion_choix'];
 
-          $liste_tri=array("ORDER BY desc","ORDER BY asc");
-          shuffle($liste_tri);
+          $col_tri=array("type","couleur");
+          $ordre_tri=array("asc","desc");
+          shuffle($col_tri);
+          shuffle($ordre_tri);
           $texte = "select * from vetements
-                    where occasion='".$occasion."'and meteo='".$meteo."' ".$liste_tri;
+                    where occasion='".$occasion."'and meteo='".$meteo."'
+                    order by ".$liste_tri." ".$ordre_tri;
           
           //example de if (pseudo code):
           $ordre = ociparse($connection, $texte);
