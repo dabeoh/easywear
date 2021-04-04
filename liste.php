@@ -40,8 +40,9 @@
             $typeVetement = $vetement[0]; // type soit short, veste..
             if ($typeVetement = "pantalon" || $typeVetement = 'shorts')
               $VetementBas=$vetement;
-            if ($typeVetement = "manteau" || $typeVetement = 'anorak')
+            else if ($typeVetement = "manteau" || $typeVetement = 'anorak')
               $VetementHaut=$vetement;
+          endwhile;
           echo "<tr>
                 <td>".$VetementBas[0]."</td>
                 <td>".$VetementBas[1]."</td>
