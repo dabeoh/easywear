@@ -11,12 +11,10 @@
 
         <?php
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
-          $rand=rand(0,3);
-          //echo '$rand';
           $liste_meteo=array("Ensoleille","Neige","Pluie","Orage");
-          
           shuffle($liste_meteo);
-          $meteo=$liste_meteo[rand(0,3)];
+          //$meteo=$liste_meteo[rand(0,3)];
+          $meteo="Ensoleille";
           $occasion=$_POST['occasion_choix'];
         
           $texte = "select * from vetements
@@ -26,8 +24,8 @@
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
           
-          $VetementHaut;
-          $VetementBas;
+          $VetementHaut=null;
+          $VetementBas=null;
 
           echo "Contexte du jour choisi :".$occasion."<br>
                 Aujourd'hui la Meteo est :".$meteo."<br>
