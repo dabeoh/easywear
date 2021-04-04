@@ -17,9 +17,10 @@
           
           shuffle($liste_meteo);
           $meteo=$liste_meteo[rand(0,3)];
+          $occasion=$_POST['occasion_choix'];
         
           $texte = "select * from vetements
-                    where occasion='".$_POST['occasion_choix']."'and meteo='".$meteo."'";
+                    where occasion='".$occasion."'and meteo='".$meteo."'";
           
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
