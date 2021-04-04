@@ -23,7 +23,7 @@
             $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
             $ordre = ociparse($connection, $texte);
             ociexecute($ordre);
-
+          echo"<div class = 'table'>";
             echo  "<table>
                       <tr>
                         <th>Type</th>
@@ -40,6 +40,7 @@
                       <td>".$ligne[3]."</td>
                     </tr>";
             echo "</table>";
+          echo"</div>";
           }
 
           ocilogoff($connection);
