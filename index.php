@@ -27,7 +27,8 @@ $name="Jean";
     <div class="middle">
       <div class="phone">
         <h1 id="logo"><span id="easy">Easy</span><span id="wear">Wear</span></h1>
-        <h3> <i>Toujours plus classe, toujours plus beau ! Même quand il fait pas beau !</i></h3>
+        <h3> <i>Toujours plus classe, toujours plus beau !<br>
+        <hw>Même quand il fait pas beau !</hw></i></h3>
 
         <a href="dress.php" class="button">M'habiller</a>
 
