@@ -64,12 +64,36 @@
           }
           
           echo "<tr>
-                  <td>".$vetementBas1[0]."</td>
-                  <td>".$vetementBas1[1]."</td>
+                  <td>".$vetementHaut3[0]."</td>
+                  <td>".$vetementHaut3[1]."</td>
+                </tr>
+                <tr>
+                  <td>".$vetementHaut2[0]."</td>
+                  <td>".$vetementHaut2[1]."</td>
+                </tr>
+                <tr>
+                  <td>".$vetementHaut1[0]."</td>
+                  <td>".$vetementHaut1[1]."</td>
                 </tr>
                 <tr>
                   <td>".$vetementHaut0[0]."</td>
                   <td>".$vetementHaut0[1]."</td>
+                </tr>
+                <tr>
+                  <td>".$vetementBas0[0]."</td>
+                  <td>".$vetementBas0[1]."</td>
+                </tr>
+                <tr>
+                  <td>".$vetementBas1[0]."</td>
+                  <td>".$vetementBas1[1]."</td>
+                </tr>
+                <tr>
+                  <td>".$vetementBas2[0]."</td>
+                  <td>".$vetementBas2[1]."</td>
+                </tr>
+                <tr>
+                  <td>".$vetementBas3[0]."</td>
+                  <td>".$vetementBas3[1]."</td>
                 </tr>";
           echo "</table>";
 
