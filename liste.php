@@ -24,8 +24,8 @@
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
           
-          $VetementHaut=null;
           $VetementBas=null;
+          $VetementHaut=null;
 
           echo "Contexte du jour choisi :".$occasion."<br>
                 Aujourd'hui la Meteo est :".$meteo."<br>
@@ -38,10 +38,12 @@
           
           while (ocifetchinto($ordre, $vetement)){ //$vetement = ligne
             $typeVetement = $vetement[0]; // type soit short, veste..
-            if ($typeVetement = "pantalon" || $typeVetement = 'shorts')
+            if ($typeVetement == "pantalon" || $typeVetement == "shorts"){
               $VetementBas=$vetement;
-            else if ($typeVetement = "manteau" || $typeVetement = 'anorak')
+            }
+            else if ($typeVetement == "manteau" || $typeVetement == "anorak"){
               $VetementHaut=$vetement;
+            }
           }
           echo "<tr>
                 <td>".$VetementBas[0]."</td>

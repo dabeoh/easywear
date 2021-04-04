@@ -30,7 +30,7 @@
           <select name="type" size="1" required>
           <option value="">- - - - - -</option>
           <option value="veste">Veste</option>
-          <option value="shirt">Shirt</option>
+          <option value="tshirt">T-Shirt</option>
           <option value="polo">Polo</option>
           <option value="pantalon">Pantalon</option>
           <option value="shorts">Shorts</option>

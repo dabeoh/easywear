@@ -19,18 +19,17 @@
         $color = $_POST['color'];
         $meteo = $_POST['meteo'];
         $occasion= $_POST['occasion'];
-        if ($type = ('pantalon' || 'shorts'))
-          $position = 'bas';
+
         $texte = "insert into vetements values
-                ('".$type."', '".$color."', '".$meteo."','".$occasion."','".$position."')";
+                ('".$type."', '".$color."', '".$meteo."','".$occasion."')";
       
         $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
         $ordre = ociparse($connection, $texte);
         ociexecute($ordre);
         ocilogoff($connection);
-        echo $type." ".$color
-                    ."<b> Meteo : </b>".$meteo
-                    ."<b> Occasion : </b>".$occasion." bien ajouté !<br/>";
+        echo  $type." ".$color
+              ."<b> Meteo : </b>".$meteo
+              ."<b> Occasion : </b>".$occasion." bien ajouté !<br/>";
         ?>
         <a href="ajoutVetement.php" class="button">Ajouter un autre</a>
         <!--bouton menu principal-->
