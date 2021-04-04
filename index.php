@@ -29,7 +29,7 @@ $name="Jean";
         <h1 id="logo">EasyWear</h1>
         <h3> <i>Toujours plus classe, toujours plus beau !<br>
         <hw>Même quand il fait pas beau !</hw></i></h3>
-
+          
         <a href="dress.php" class="button">M'habiller</a>
 
         <a href="garderobe.php" class="button">Ma Garde Robe</a>

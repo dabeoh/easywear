@@ -17,11 +17,7 @@
             <option value="festif">Festif</option>
             <option value="travail">Travail</option>
           </select>
-
-          <p>Afficher d'autres suggestions:</p>
-          Oui:<input type="radio" value="Yes" name="suggest"><br />
-          Non:<input type="radio" value="No" name="suggest"><br />
-          <!--Fait quelque chose ça ? ^ -->
+          
           <input class = "button" type="submit" name="affiche_vetements" value="M'habiller !">
         </form>
 
