@@ -17,12 +17,13 @@
            } 
         $type = $_POST['type'];
         $color = $_POST['color'];
-
         $meteo = $_POST['meteo'];
         $occasion= $_POST['occasion'];
-
+        if ($type = ('pantalon' || 'shorts'))
+          $position = 'bas';
         $texte = "insert into vetements values
-                ('".$type."', '".$color."', '".$meteo."','".$occasion."')";
+                ('".$type."', '".$color."', '".$meteo."','".$occasion."','".$position."')";
+      
         $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
         $ordre = ociparse($connection, $texte);
         ociexecute($ordre);
