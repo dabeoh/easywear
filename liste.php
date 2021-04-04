@@ -40,11 +40,11 @@
             $typeVetement = $vetement[0]; // type soit short, veste..
             if ($typeVetement == "pantalon"){
               $vetementBas=$vetement;
-              echo "vetement bas : ".$vetementBas;
+              echo "vetement bas : ".$vetementBas[0];
             }
             else if ($typeVetement == "manteau"){
               $vetementHaut=$vetement;
-              echo "vetement haut : ".$vetementHaut;
+              echo "vetement haut : ".$vetementHaut[0];
               
             }
           }
