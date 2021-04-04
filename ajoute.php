@@ -9,6 +9,12 @@
     <div class="middle">
       <div class="phone">
         <?php
+
+           if(empty($_POST['occasion'])||empty($_POST['meteo'])||empty($_POST['type'])||empty($_POST['couleur'])){
+
+             header('Location: ajoutVetement.php');  
+
+           } 
         $type = $_POST['type'];
         $color = $_POST['color'];
 

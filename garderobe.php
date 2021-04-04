@@ -22,15 +22,25 @@
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
-          while (ocifetchinto($ordre, $ligne))
-              echo $ligne[0]." ".$ligne[1]
-                    ."<b> Meteo : </b>".$ligne[2]
-                    ."<b> Occasion : </b>".$ligne[3]."<br/>";
-          
+
+        echo  "<table>
+                  <tr>
+                    <th>Type</th>
+                    <th>Couleur</th>
+                    <th>Meteo</th>
+                    <th>Occasion</th>
+                </tr>";
+        
+            while (ocifetchinto($ordre, $ligne))
+                echo "<tr>
+                        <td>".$ligne[0]."</td>
+                        <td>".$ligne[1]."</td>
+                        <td>".$ligne[2]."</td>
+                        <td>".$ligne[3]."</td>
+                      </tr>";
+          echo "</table>";
+            
           ocilogoff($connection);
-          
-          
-        }
         ?>
 
         <a href="ajoutVetement.php" class="button">Ajouter un autre Vêtement</a>
