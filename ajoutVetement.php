@@ -28,24 +28,39 @@
 
           <p>Type:</p>
           <select name="type" size="1" required>
-          <option value="">- - - - - -</option>
-          <option value="veste">Veste</option>
-          <option value="tshirt">T-Shirt</option>
-          <option value="polo">Polo</option>
-          <option value="pantalon">Pantalon</option>
-          <option value="short">Short</option>
-          <option value="chaussettes">Chaussettes</option>
-          <option value="baskets">Baskets</option>
-          <option value="casquette">casquette</option>
-          <option value="sweat">Sweat</option>
-          <option value="chemise">Chemise</option>
-          <option value="manteau">Manteau</option>
-          <option value="jeans">Jeans</option>
-          <option value="débardeur">Débardeur</option>
-          <option value="pull">Pull</option>
-          <option value="anorak">Anorak</option>
-          <option value="tunique">Tunique</option>
-          <option value="robe">Robe</option>
+            <option value="">- - - - - -</option>
+            <!--Haut3-->
+            <option value="manteau">Manteau</option>
+            <option value="anorak">Anorak</option>
+            <!--Haut2-->
+            <option value="pull">Pull</option>
+            <option value="veste">Veste</option>
+            <option value="sweat">Sweat</option>
+            <!--Haut1-->
+            <option value="tshirt">T-Shirt</option>
+            <option value="polo">Polo</option>
+            <option value="chemise">Chemise</option>
+            <option value="débardeur">Débardeur</option>
+            <option value="tunique">Tunique</option>
+            <option value="robe">Robe</option>
+            <!--Haut0-->
+            <option value="soutien-gorge">Soutien-Gorge</option>
+            <option value="brassiere">Brassière</option>
+            <!--Bas0-->
+            <option value="culotte">Culotte</option>
+            <option value="string">String</option>
+            <option value="tanga">Tanga</option>
+            <!--Bas1-->
+            <option value="pantalon">Pantalon</option>
+            <option value="jeans">Jeans</option>
+            <option value="jogging">jogging</option>
+            <option value="short">Short</option>
+            <option value="jupe">Jupe</option>
+            <!--Bas2-->
+            <option value="chaussettes">Chaussettes</option>
+            <!--Bas3-->
+            <option value="baskets">Baskets</option>
+            <option value="Chaussures à talon">Chaussures à talon</option>
           </select>
 
           <p>Meteo</p>
