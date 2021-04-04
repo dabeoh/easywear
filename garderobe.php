@@ -19,7 +19,7 @@
           header('Location: index.php');
         } else
           {
-            $texte = "select * from vetements";
+            $texte = "select * from vetements order by type";
             $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
             $ordre = ociparse($connection, $texte);
             ociexecute($ordre);
