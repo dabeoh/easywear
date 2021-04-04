@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>S'habiller</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
   </head>
   
   <body>
