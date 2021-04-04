@@ -13,7 +13,7 @@
           $connection = ocilogon("c##hmouden_a", "hmouden_a", "dbinfo");
           $rand=rand(0,3);
           //echo '$rand';
-          $liste_meteo=array("ensoleille","neige","pluie","orage");
+          $liste_meteo=array("Ensoleille","Neige","Pluie","Orage");
           
           shuffle($liste_meteo);
           $meteo=$liste_meteo[rand(0,3)];
@@ -46,7 +46,7 @@
         </br>
         
         <form method="POST" action="ajoutVetement.php">
-          <input type="submit" value="Ajouter un autre vetement"/>
+          <input class="button" type="submit" value="Ajouter un autre vetement"/>
         </form>
 
          <!--bouton menu principal-->
