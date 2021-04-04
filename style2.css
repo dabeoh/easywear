@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body{
-  color: #D5A8D1;
+  color: #8787A3;
   font-family: 'Roboto', sans-serif;
   background-color:  #8787A3;
   display: table;
@@ -30,14 +30,17 @@ body{
 }
 
 .table{
-  background: white;
+
   overflow-y: auto;
-  height: 600px;
+  height: 650px;
 }
 
 h1{
-  color: #8787A3;
   font-size: 48px;
+}
+
+h3{
+  color: #D5A8D1;
 }
 
 hw{
@@ -46,7 +49,6 @@ hw{
 }
 
 .button {
-  font-family: 'Roboto', sans-serif;
   border-radius:50px;
   color: #8787A3;
   background-color: white;

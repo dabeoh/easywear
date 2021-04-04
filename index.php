@@ -26,7 +26,7 @@ $name="Jean";
   <body>
     <div class="middle">
       <div class="phone">
-        <h1 id="logo"><span id="easy">Easy</span><span id="wear">Wear</span></h1>
+        <h1 id="logo">EasyWear</h1>
         <h3> <i>Toujours plus classe, toujours plus beau !<br>
         <hw>Même quand il fait pas beau !</hw></i></h3>
 
