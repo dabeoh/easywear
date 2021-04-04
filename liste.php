@@ -28,9 +28,9 @@
           while (ocifetchinto($ordre, $vetement)) //$vetement = ligne
             $typeVetement = $vetement[0]; // type soit short, veste..
             if ($typeVetement = "pantalon" || $typeVetement = 'shorts')
-              $VetementBas=$vetements;
+              $VetementBas=$vetement;
             else if ($typeVetement = "manteau" || $typeVetement = 'anorak')
-              $VetementHaut=$vetements;
+              $VetementHaut=$vetement;
           echo "<tr>
                 <td>".$VetementBas[0]."</td>
                 <td>".$VetementBas[1]."</td>
