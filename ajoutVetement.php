@@ -33,9 +33,8 @@
           <option value="tshirt">T-Shirt</option>
           <option value="polo">Polo</option>
           <option value="pantalon">Pantalon</option>
-          <option value="shorts">Shorts</option>
+          <option value="short">Short</option>
           <option value="chaussettes">Chaussettes</option>
-          <option value="pantoufles">Pantoufles</option>
           <option value="baskets">Baskets</option>
           <option value="casquette">casquette</option>
           <option value="sweat">Sweat</option>

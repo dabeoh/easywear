@@ -38,13 +38,11 @@
           
           while (ocifetchinto($ordre, $vetement)){ //$vetement = ligne
             $typeVetement = $vetement[0]; // type soit short, veste..
-            if ($typeVetement == "pantalon"){
+            if ($typeVetement == "pantalon" || $typeVetement == "short"){
               $vetementBas=$vetement;
-              echo "vetement bas : ".$vetementBas[0];
             }
-            else if ($typeVetement == "manteau"){
+            else if ($typeVetement == "manteau" || $typeVetement == "anorak"){
               $vetementHaut=$vetement;
-              echo "vetement haut : ".$vetementHaut[0];
               
             }
           }
