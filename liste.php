@@ -16,7 +16,7 @@
           $meteo=$liste_meteo[rand(0,3)];
           $occasion=$_POST['occasion_choix'];
 
-          $liste_tri=array("ORDER BY desc","ORDER BY asc","GROUP BY type","GROUP BY couleur");
+          $liste_tri=array("ORDER BY desc","ORDER BY asc");
           shuffle($liste_tri);
           $texte = "select * from vetements
                     where occasion='".$occasion."'and meteo='".$meteo."' ".$liste_tri;
