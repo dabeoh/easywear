@@ -22,7 +22,7 @@
           shuffle($ordre_tri);
           $texte = "select * from vetements
                     where occasion='".$occasion."'and meteo='".$meteo."'
-                    order by ".$liste_tri." ".$ordre_tri;
+                    order by ".$col_tri[0]." ".$ordre_tri[0];
           
           //example de if (pseudo code):
           $ordre = ociparse($connection, $texte);
