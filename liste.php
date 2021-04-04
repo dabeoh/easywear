@@ -15,6 +15,7 @@
           shuffle($liste_meteo);
           $meteo=$liste_meteo[rand(0,3)];
           $occasion=$_POST['occasion_choix'];
+          
 
           $col_tri=array("type","couleur");
           $ordre_tri=array("asc","desc");
@@ -104,7 +105,6 @@
         </br>
         
         <!--Boutons-->
-        <a href="liste.php" class="button">Autre Suggestion</a>
         <a href="ajoutVetement.php" class="button">Ajouter un Nouveau Vêtement</a>
          <!--bouton menu principal-->
         <a href="index.php" class="button">Menu Principal</a>
