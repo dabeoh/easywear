@@ -24,8 +24,14 @@
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
           
-          $vetementBas=null;
-          $vetementHaut=null;
+          $vetementHaut3=null;
+          $vetementHaut2=null;
+          $vetementHaut1=null;
+          $vetementHaut0=null;
+          $vetementBas0=null;
+          $vetementBas1=null;
+          $vetementBas2=null;
+          $vetementBas3=null;
 
           echo "Contexte du jour choisi :".$occasion."<br>
                 Aujourd'hui la Meteo est :".$meteo."<br>
@@ -38,19 +44,32 @@
           
           while (ocifetchinto($ordre, $vetement)){ //$vetement = ligne
             $typeVetement = $vetement[0]; // type soit short, veste..
-            if ($typeVetement == "pantalon" || $typeVetement == "short"){
-              $vetementBas=$vetement;
-            }
-            else if ($typeVetement == "manteau" || $typeVetement == "anorak"){
-              $vetementHaut=$vetement;
-              
+            if ($typeVetement == "manteau" || $typeVetement == "anorak" ){
+              $vetementHaut3=$vetement;
+            } else if ($typeVetement == "pull" || $typeVetement == "veste" || $typeVetement == "sweat"){
+              $vetementHaut2=$vetement;
+            } else if ( $typeVetement == "tshirt" ||  $typeVetement == "polo" || $typeVetement == "chemise" || $typeVetement == "debardeur" || $typeVetement == "tunique" || $typeVetement == "robe" ){
+              $vetementHaut1=$vetement;
+            } else if( $typeVetement == "soutien-gorge" || $typeVetement == "brassiere" ){
+              $vetementHaut0=$vetement;
+            } else if($typeVetement == "culotte" || $typeVetement == "string" || $typeVetement == "tanga" ) {
+              $vetementBas0=$vetement;
+            } else if ( $typeVetement == "pantalon" || $typeVetement == "jean" || $typeVetement == "jogging" || $typeVetement == "short" || $typeVetement == "jupe" ){
+              $vetementBas1=$vetement;
+            } else if ($typeVetement == "chaussettes" ){
+              $vetementBas2=$vetement;
+            } else if ($typeVetement == "baskets" || $typeVetement == "talon" ) {
+              $vetementBas3=$vetement;
             }
           }
+          
           echo "<tr>
-                  <td>".$vetementBas[0]."</td>
-                  <td>".$vetementBas[1]."</td>
-                  <td>".$vetementHaut[0]."</td>
-                  <td>".$vetementHaut[1]."</td>
+                  <td>".$vetementBas1[0]."</td>
+                  <td>".$vetementBas1[1]."</td>
+                </tr>
+                <tr>
+                  <td>".$vetementHaut0[0]."</td>
+                  <td>".$vetementHaut0[1]."</td>
                 </tr>";
           echo "</table>";
 
