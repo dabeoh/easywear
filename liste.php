@@ -23,20 +23,19 @@
           
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
-          echo "Aujourd'hui la Meteo est :".$meteo."<br>
+          echo "Contexte du jour choisi :".$occasion."<br>
+                Aujourd'hui la Meteo est :".$meteo."<br>
                 Vêtements suggérés :<br>
                 <table>
                   <tr>
                     <th>Type</th>
                     <th>Couleur</th>
-                    <th>Occasion</th>
                 </tr>";
         
             while (ocifetchinto($ordre, $ligne)) 
                 echo "<tr>
                         <td>".$ligne[0]."</td>
                         <td>".$ligne[1]."</td>
-                        <td>".$ligne[3]."</td>
                       </tr>";
           echo "</table>";
             
