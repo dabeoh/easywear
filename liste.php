@@ -22,7 +22,26 @@
           $texte = "select * from vetements
                     where occasion='".$occasion."'and meteo='".$meteo."'";
           
+          //example de if (pseudo code):
           $ordre = ociparse($connection, $texte);
+          ociexecute($ordre);
+          while (ocifetchinto($ordre, $vetement)) //$vetement = ligne
+            $typeVetement = $vetement[0]; // type soit short, veste..
+            if ($typeVetement = "pantalon" || $typeVetement = 'shorts')
+              $VetementBas=$vetements;
+            else if ($typeVetement = "manteau" || $typeVetement = 'anorak')
+              $VetementHaut=$vetements;
+          echo "<tr>
+                <td>".$VetementBas[0]."</td>
+                <td>".$VetementBas[1]."</td>
+                <td>".$VetementHaut[0]."</td>
+                <td>".$VetementHaut[1]."</td>
+                </tr>";
+          echo "</table>";
+
+          
+
+          /*$ordre = ociparse($connection, $texte);
           ociexecute($ordre);
           echo "Contexte du jour choisi :".$occasion."<br>
                 Aujourd'hui la Meteo est :".$meteo."<br>
@@ -40,7 +59,7 @@
                       </tr>";
           echo "</table>";
             
-          ocilogoff($connection);
+          ocilogoff($connection);*/
         ?>
         </br>
         
