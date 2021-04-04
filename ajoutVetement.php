@@ -44,7 +44,7 @@
             <option value="tunique"   >Tunique</option>
             <option value="robe"      >Robe</option>
             <!--Haut0-->
-            <option value="soutien-gorge" >Soutien-Gorge</option>
+            <option value="soutiengorge" >Soutien-Gorge</option>
             <option value="brassiere"     >Brassière</option>
             <!--Bas0-->
             <option value="culotte" >Culotte</option>
