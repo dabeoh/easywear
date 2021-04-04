@@ -11,23 +11,24 @@
         <form action="ajoute.php" method="POST">
           <h2>Rajouter un vetement:</h2>
           <p>Couleur:</p> 
-          <select name="color" size="1" required>
-          <option value="">- - - - - -</option>
-          <option value="Bleu"  >Bleu</option>
-          <option value="Gris"  >Gris</option>
-          <option value="Marron">Marron</option>
-          <option value="Orange">Orange</option>
-          <option value="Rouge" >Rouge</option>
-          <option value="Violet">Violet</option>
-          <option value="Blanc" >Blanc</option>
-          <option value="Jaune" >Jaune</option>
-          <option value="Noir"  >Noir</option>
-          <option value="Rose"  >Rose</option>
-          <option value="Vert"  >Vert</option>
+          <select class="button" name="color" size="1" required>
+            <option value="">- - - - - -</option>
+            <option value="Bleu"  >Bleu</option>
+            <option value="Gris"  >Gris</option>
+            <option value="Marron">Marron</option>
+            <option value="Orange">Orange</option>
+            <option value="Rouge" >Rouge</option>
+            <option value="Violet">Violet</option>
+            <option value="Blanc" >Blanc</option>
+            <option value="Jaune" >Jaune</option>
+            <option value="Noir"  >Noir</option>
+            <option value="Rose"  >Rose</option>
+            <option value="Vert"  >Vert</option>
           </select>
+          <br>
 
           <p>Type:</p>
-          <select name="type" size="1" required>
+          <select class="button" name="type" size="1" required>
             <option value="">- - - - - -</option>
             <!--Haut3-->
             <option value="manteau" >Manteau</option>
@@ -62,26 +63,26 @@
             <option value="baskets" >Baskets</option>
             <option value="talon"   >Chaussures à talon</option>
           </select>
+          <br>
 
           <p>Meteo</p>
-          <select name="meteo" size="1" required>
-          <option value="">- - - - - -</option>
-          <option value="Pluie">Pluie</option>
-          <option value="Ensoleille">Ensoleille</option>
-          </select>
-          <br />
-
-          <p>Occasion:</p>
-          <select name="occasion" size="1" required>
-          <option value="">- - - - - -</option>
-          <option value="quotidien">Quotidien</option>
-          <option value="festif">Festif</option>
-          <option value="travail">Travail</option>
-
+          <select class="button" name="meteo" size="1" required>
+            <option value="">- - - - - -</option>
+            <option value="Pluie">Pluie</option>
+            <option value="Ensoleille">Ensoleille</option>
           </select>
           <br>
+
+          <p>Occasion:</p>
+          <select class="button" name="occasion" size="1" required>
+            <option value="">- - - - - -</option>
+            <option value="quotidien">Quotidien</option>
+            <option value="festif">Festif</option>
+            <option value="travail">Travail</option>
+          </select>
+          <br><br>
                   
-           <input class='button' type='submit' name='sent' value='Ajouter'>
+          <input class='button' type='submit' name='send' value='Ajouter'>
    
         </form>
 

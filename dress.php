@@ -12,12 +12,12 @@
           <h2>Aide-moi à choisir un vêtement !</h2>
           <h4> Je sélectionne mon occasion : </h4>
 
-          <select name="occasion_choix" size="1" required>
+          <select class = "button" name="occasion_choix" size="1" required>
             <option value="quotidien">Quotidien</option>
             <option value="festif">Festif</option>
             <option value="travail">Travail</option>
           </select>
-          
+          <br>
           <input class = "button" type="submit" name="affiche_vetements" value="M'habiller !">
         </form>
 
