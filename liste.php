@@ -25,6 +25,19 @@
           //example de if (pseudo code):
           $ordre = ociparse($connection, $texte);
           ociexecute($ordre);
+          
+          $VetementHaut;
+          $VetementBas;
+
+          echo "Contexte du jour choisi :".$occasion."<br>
+                Aujourd'hui la Meteo est :".$meteo."<br>
+                Vêtements suggérés :<br>
+                <table>
+                  <tr>
+                    <th>Type</th>
+                    <th>Couleur</th>
+                </tr>";
+          
           while (ocifetchinto($ordre, $vetement)) //$vetement = ligne
             $typeVetement = $vetement[0]; // type soit short, veste..
             if ($typeVetement = "pantalon" || $typeVetement = 'shorts')
