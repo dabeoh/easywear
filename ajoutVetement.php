@@ -69,15 +69,7 @@
           </select>
           <br>
                   
-           <?php
-
-           if(($_POST['occasion'].value=="")||($_POST['meteo'].value=="")||($_POST['type'].value=="")||($_POST['couleur'].value=="")){
-
-             header('Location: ajoutVetement.php');  
-
-           } else {
-           echo  "<input class='button' type='submit' name='sent' value='Ajouter'>";
-            } ?>
+           <input class='button' type='submit' name='sent' value='Ajouter'>
    
         </form>
 
